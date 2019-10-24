@@ -138,6 +138,8 @@
             color: #091429;
         }
 
+
+
         /* contact form start */
 
         .sut:hover {
@@ -295,9 +297,12 @@
             display: flex;
         }
 
+        .con {}
 
 
         /* Media queries */
+
+
 
         @media (max-width: 767px) {
             .tgle {
@@ -361,7 +366,24 @@
                 padding: 2.5%;
 
             }
+
+            .navbar-brand {
+                margin-left: 10px;
+            }
         }
+
+
+
+
+
+        @media only screen and (max-width: 800px) {
+            .hero-img {
+                height: 35vh;
+                width: 45vw;
+
+            }
+        }
+
 
 
 
@@ -397,7 +419,7 @@
 
             .hero-img {
                 height: 40vh;
-                width: 40vw;
+                width: 60vw;
 
             }
 
@@ -409,21 +431,35 @@
             }
 
             .btnContact {
-                font-size: 0.7em;
+                font-size: 1em;
                 padding-right: 1em;
             }
 
 
             .hero-img {
                 height: 30vh;
-                width: 40vw;
+                width: 80vw;
 
             }
+
+            .contact-form {
+                width: 100%
+            }
+
         }
 
         @media(max-width: 400px) {
             .header-items {
-                display: block;
+                display: flex;
+                width: 10%;
+                margin-left: 0px;
+                margin-top: 5px;
+
+            }
+
+
+            .tog {
+                margin-right: 20px;
             }
         }
     </style>
@@ -492,15 +528,17 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
 
-
-
+                    <a class="navbar-brand mr-auto" href="#">
+                        <img src="image/Shape.svg" class="mr-3">
+                        Contact Us</a>
                     <ul class="nav navbar-nav ml-auto mt-2 mt-lg-0">
                         <div class="header">
 
+
                             <div class="header-items">
 
-                                <div>
-                                    <a href="#" class="border-left p-3"><img
+                                <div class="">
+                                    <a href="#" class="border-left p-3 "><img
                                             src="https://res.cloudinary.com/slarin/image/upload/v1570685957/contact-support/help_pvv3ie.svg"
                                             class="header-icon "></a>
                                     <a href="#" class="sut">
@@ -512,18 +550,24 @@
                                             src="https://res.cloudinary.com/slarin/image/upload/v1570685957/contact-support/notification_1_ddc0vh.svg"
                                             class="header-icon "></a>
                                 </div>
-                                <div class="dropdown">
-                                    <a href="#" class="border-left p-2"><img
+                                <div class="">
+                                    <!-- <a href="#" class="border-left p-2"><img
                                             src="https://res.cloudinary.com/slarin/image/upload/v1570685959/contact-support/avatar_ofgo0e.svg"
                                             class="avatar-sm "></a>
-                                    <p>Juliet</p>
+                                    <p>User</p>
                                     <img src="https://res.cloudinary.com/slarin/image/upload/v1570685957/contact-support/Vectordown-caret_fla9dn.svg"
                                         class="caret-down" onclick="drop()"></i>
                                     <div class="dropdown-menu" id="dd-menu">
                                         <a href="#" class="menu-item">Action</a>
                                         <a href="#" class="menu-item">Another action</a>
                                         <a href="#" class="menu-item">Something else here</a>
-                                    </div>
+                                    </div> -->
+
+                                    <a class=" border-left p-3 sut" href="#">
+                                        <span class="border rounded-circle p-1 font-weight-bold">AU</span>
+                                        <span class="d-lg-none d-xl-none"> </span>
+                                    </a>
+
                                 </div>
                             </div>
                         </div>
